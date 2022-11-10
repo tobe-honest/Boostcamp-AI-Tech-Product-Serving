@@ -37,7 +37,7 @@ def main():
         st.write("Classifying...")
         _, y_hat = get_prediction(model, image_bytes)
         label = config['classes'][y_hat.item()]
-
+        
         st.write(f'label is {label}')
 
 
